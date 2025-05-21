@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1f2124;
+      color: #ecdcdc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .contain {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgb(39, 39, 39);
+      max-width: 400px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #display {
+      font-size: 20px;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    input[type="button"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="button"]:hover {
+      background-color: #219150;
+    }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <p id="display">.....</p>
+    <img id="ipos" width="300px" height="400px" >
+    <input type="button"  value="PAY NOW" onclick="con()"/>
+    </div>
+    
+</body>
+<script>
+    let m = localStorage.getItem("moviename");
+    let image = localStorage.getItem("mposter");
+    let snumber= Number(localStorage.getItem("seatno"));
+    let tprice = snumber*250;
+    document.getElementById("ipos").src =image
+    document.getElementById("display").innerText =
+        "Movie name: " + m + "\n" +
+        "Total seats: " + snumber + "\n" +
+        "Total amount: ₹" + tprice;
+    function con(){
+        let cn = confirm("Are you sure you want to book the movie?");
+       if(cn)
+    {
+        location.href ="confirmyes.html";
+
+    } 
+    else
+    {
+        location.href ="confirmno.html";
+    }
+   }    
+</script>
+</html>

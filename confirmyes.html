@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Confirmation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1f2124;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .confirmation-box {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .confirmation-box h1 {
+      color: #27ae60;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    #show {
+      font-size: 18px;
+      color: #333;
+      white-space: pre-line; /* Preserves \n line breaks */
+    }
+    button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #2980b9;
+}
+  </style>
+</head>
+<body>
+  <div class="confirmation-box">
+    <h1>Movie Successfully Booked 🎉</h1>
+    <p id="show">Loading details...</p>
+    <button onclick="goHome()">Book Another</button>
+  </div>
+
+  <script>
+    let mname = localStorage.getItem("moviename");
+    let snumber = Number(localStorage.getItem("seatno"));
+
+    document.getElementById("show").innerText =
+      "Movie name: " + mname + "\n" +
+      "Total seats: " + snumber +"\n" +
+      "Date : 30/05/2025 "+ "\n"+
+      "Time : 6:00 pm to 9:00 pm" ;
+      function goHome(){
+        location.href= 'firstProject.html';
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #1f2124;
+    margin: 0;
+    padding: 0;
+}
+/* #heading {
+    background-color: #c7b9b9;
+    color: #2b281b; /* Lighter text color 
+    padding: 20px;
+    font-size: 28px;
+    box-shadow: #3f3a3a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow 
+}
+*/
+#heading {
+    background: linear-gradient(135deg, #3498db, #9b59b6); /* Gradient background */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    font-size: 30px;
+    
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Strong text shadow */
+    letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+}
+
+
+
+#moives {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#moives div {
+  background: linear-gradient(135deg, rgba(71, 68, 68, 1), rgba(91, 88, 88, 1)); /* Subtle gradient effect */
+
+    border-radius: 10px;
+   
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#moives div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#moives img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Movie Title */
+#moives p {
+    margin: 10px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+

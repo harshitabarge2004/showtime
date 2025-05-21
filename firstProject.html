@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="moive.css">
+</head>
+
+<body>
+    <div id="heading">
+        <center><b>Showtime Finder</b></center>
+
+    </div>
+    <div id="moives">
+        <div>
+
+            <img src="chaava.webp" width="180px" height="250px" onclick="bookMovie('Chaava','chaava.webp')" /><br>
+            <center>
+                <p>Chaava<br>
+                    Released on : 14/02/2025 </p>
+            </center>
+
+        </div>
+        <div> <img src="uri.jpg" width="180px" height="250px" onclick="bookMovie('URI','uri.jpg')" id="ch" />
+            <center>
+                <p>URI<br>
+                    Released on : 11/01/2019
+
+                </p>
+            </center>
+        </div>
+        <div><img src="major.jpg" width="180px" height="250px" onclick="bookMovie('Major','major.jpg')" />
+            <center>
+                <p>Major<br>
+                    Released on : 03/06/2022
+
+
+                </p>
+            </center>
+        </div>
+        <div><img src="Tanaji_film_poster.jpg" width="180px" height="250px"
+                onclick="bookMovie('Tanaji','Tanaji_film_poster.jpg')" />
+            <center>
+                <p>Tanaji
+                    <br>
+                    Released on : 10/01/2020
+
+                </p>
+            </center>
+        </div>
+        <div><img src="sky force.jpg" width="180px" height="250px" onclick="bookMovie('Sky Force','sky force.jpg')" />
+            <center>
+                <p>Sky Force<br>
+                    Released on : 24/01/2025
+                </p>
+            </center>
+        </div>
+        <div><img src="civilwar.jpg" width="180px" height="250px"
+                onclick="bookMovie('Captain America: Civil War ','civilwar.jpg')" />
+            <center>
+                <p>Captain America: Civil War<br>
+                    Released on : 27/04/2016
+                </p>
+            </center>
+        </div>
+        <div><img src="ironman.jpg" width="180px" height="250px" onclick="bookMovie('Iron Man-I','ironman.jpg')" />
+            <center>
+                <p> Iron Man-I<br>
+
+                    Released on : 01/05/2008
+                </p>
+            </center>
+
+        </div>
+        <div><img src="ironman2.jpg" width="180px" height="250px" onclick="bookMovie('Iron Man-II','ironman2.jpg')" />
+            <center>
+                <p> Iron Man-II<br>
+
+                    Released on : 07/05/2010
+                </p>
+            </center>
+
+        </div>
+        <div><img src="lucy.webp" width="180px" height="250px" onclick="bookMovie('Lucy','lucy.webp')" />
+            <center>
+                <p> Lucy <br>
+
+                    Released on : 06/08/2014
+                </p>
+            </center>
+
+        </div>
+
+        <div><img src="gravity.jpg" width="180px" height="250px" onclick="bookMovie('Gravity','gravity.jpg')" />
+            <center>
+                <p> Gravity <br>
+
+                    Released on : 11/10/2013
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi1.jpg" width="180px" height="250px" onclick="bookMovie('Mission: Impossible I','mi1.jpg')" />
+            <center>
+                <p> Mission: Impossible<br>
+                    (1996)<br>
+                    Released on : 22/05/1996
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi2.jpg" width="180px" height="250px" onclick="bookMovie('Mission: Impossible II','mi2.jpg')" />
+            <center>
+                <p>Mission: Impossible II<br>
+
+                    Released on : 24/05/2000
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi3.jpeg" width="180px" height="250px"
+                onclick="bookMovie('Mission: Impossible III','mi3.jpeg')" />
+            <center>
+                <p>Mission: Impossible III<br>
+
+                    Released on : 04/05/2006
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi4.jpg" width="180px" height="250px"
+                onclick="bookMovie('Mission: Impossible - Ghost Protocol','mi4.jpg')" />
+            <center>
+                <p>Mission: Impossible - <br>
+                    Ghost Protocol<br>
+
+                    Released on : 16/12/2011
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi5.jpg" width="180px" height="250px"
+                onclick="bookMovie('Mission: Impossible - Rogue Nation','mi5.jpg')" />
+            <center>
+                <p>Mission: Impossible -<br>
+                    Rogue Nation<br>
+                    Released on : 05/08/2015
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi6.webp" width="180px" height="250px"
+                onclick="bookMovie('Mission: Impossible - Fallout','mi6.webp')" />
+            <center>
+                <p>Mission: Impossible -<br>
+                    Fallout<br>
+                    Released on : 27/07/2018
+                </p>
+            </center>
+
+        </div>
+        <div><img src="mi7.jpg" width="180px" height="250px"
+                onclick="bookMovie('Mission: Impossible – The Final Reckoning','mi7.jpg')" />
+            <center>
+                <p>Mission: Impossible -<br>
+                    The Final Reckoning<br>
+
+                    Released on : 12/07/2023
+                </p>
+            </center>
+
+        </div>
+
+    </div>
+    <script>
+    function bookMovie(smovie, poster) {
+            localStorage.setItem("moviename", smovie);
+            localStorage.setItem("mposter", poster);
+            location.href = 'moives.html';
+
+
+        }
+    </script>
+</body>
+
+</html>
